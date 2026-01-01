@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Tool to Remove Mustache From Photo Online | Removemustache</title>
+    <meta name="description" content="Remove mustaches from photos using a free AI tool. Instantly clean facial hair from portraits while keeping natural skin texture and details intact.">
+    <meta name="keywords" content="remove mustache, facial hair removal ai, clean shaven photo editor, remove beard ai, photo retouching, mustache remover tool, ai face editor">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Free Tool to Remove Mustache From Photo Online">
+    <meta property="og:description" content="Remove mustaches from photos using a free AI tool. Instantly clean facial hair from portraits while keeping natural skin texture and details intact.">
+    <meta property="og:image" content="images/hero-bg.jpg">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Free Tool to Remove Mustache From Photo Online">
+    <meta name="twitter:description" content="Remove mustaches from photos using a free AI tool. Instantly clean facial hair from portraits while keeping natural skin texture and details intact.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@500;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Modals (Legal) -->
+    <div id="privacy-modal" class="modal hidden">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Privacy Policy</h2>
+                <button class="close-modal" aria-label="Close modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p><strong>Last Updated:</strong> 2024</p>
+                <h4>1. Data Collection</h4>
+                <p>We collect only the minimum data necessary:</p>
+                <ul>
+                    <li>Images you upload for processing (temporarily stored)</li>
+                    <li>Basic usage analytics (non-personal)</li>
+                    <li>Browser type and device information</li>
+                </ul>
+                <h4>2. Image Processing</h4>
+                <p>Your uploaded images are:</p>
+                <ul>
+                    <li>Processed securely on our servers</li>
+                    <li>Automatically deleted within 24 hours</li>
+                    <li>Never shared with third parties</li>
+                    <li>Not used for AI training without consent</li>
+                </ul>
+                <h4>3. Data Security</h4>
+                <p>All data transmission is encrypted using SSL/TLS protocols.</p>
+                <h4>4. Cookies</h4>
+                <p>We use essential cookies only for site functionality.</p>
+                <h4>5. Your Rights</h4>
+                <p>You have the right to request deletion of any stored data.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="terms-modal" class="modal hidden">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Terms of Service</h2>
+                <button class="close-modal" aria-label="Close modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p><strong>Last Updated:</strong> 2024</p>
+                <h4>1. Acceptance of Terms</h4>
+                <p>By using this service, you agree to these Terms.</p>
+                <h4>2. Service Description</h4>
+                <p>This service provides AI-powered image transformation. Provided "as-is" without warranties.</p>
+                <h4>3. Acceptable Use</h4>
+                <p>You agree NOT to upload:</p>
+                <ul>
+                    <li>Illegal or unlawful content</li>
+                    <li>Explicit, pornographic, or obscene material</li>
+                    <li>Content depicting violence or harm</li>
+                    <li>Images you do not have rights to use</li>
+                </ul>
+                <h4>4. Intellectual Property</h4>
+                <p>You retain full ownership of your original images. Generated effects are royalty-free for personal and commercial use.</p>
+                <h4>5. Limitation of Liability</h4>
+                <p>We are not liable for any damages arising from the use of this service.</p>
+                <h4>6. Modifications</h4>
+                <p>We may update these terms at any time. Continued use constitutes acceptance.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <header>
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+                <span>Removemustache</span>
+            </a>
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <nav>
+                <a href="#playground">Remove Facial Hair</a>
+                <a href="#how-it-works">How it Works</a>
+                <a href="#gallery">Examples</a>
+                <a href="#testimonials">Reviews</a>
+                <a href="#faq">FAQ</a>
+                <a href="#playground" class="btn btn-sm btn-primary mobile-cta">Generate</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-bg-image">
+            <img src="images/hero-bg.jpg" alt="Dark cinematic background with blue neon accents">
+        </div>
+        <div class="hero-bg-animation">
+            <!-- Particles injected via JS -->
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="container hero-content fade-in-up">
+            <h1>Remove Mustache</h1>
+            <p>The Remove Mustache tool helps you erase unwanted mustache hair from photos. Upload your image, and the AI refines the facial area to deliver a clean-shaven, natural-looking result.</p>
+            <div class="hero-actions">
+                <a href="#playground" class="btn btn-primary btn-lg pulse">Generate</a>
+                <a href="#how-it-works" class="btn btn-outline btn-lg">How it works</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Playground Section -->
+    <section id="playground">
+        <div class="container">
+            <div class="section-header fade-in-up">
+                <h2>Remove Facial Hair</h2>
+                <p>The Remove Mustache tool helps you erase unwanted mustache hair from photos. Upload your image, and the AI refines the facial area to deliver a clean-shaven, natural-looking result.</p>
+            </div>
+            
+            <div class="playground-grid">
+                <!-- Left: Upload -->
+                <div class="panel upload-panel fade-in-left">
+                    <h3>Upload Photo</h3>
+                    <div id="upload-zone" class="upload-zone">
+                        <input type="file" id="file-input" accept="image/png, image/jpeg, image/jpg" hidden>
+                        <div class="upload-content">
+                            <i class="fa-solid fa-cloud-arrow-up"></i>
+                            <p>Drag & Drop or Click to Upload</p>
+                            <span class="file-info">Supports JPG, PNG</span>
+                        </div>
+                        <img id="preview-image" src="" alt="Preview" class="hidden">
+                        <button id="remove-img-btn" class="icon-btn hidden" aria-label="Remove image">
+                            <i class="fa-solid fa-times"></i>
+                        </button>
+                    </div>
+                    <div class="controls">
+                        <button id="generate-btn" class="btn btn-primary btn-block" disabled>Generate</button>
+                        <button id="reset-btn" class="btn btn-outline btn-block" disabled>Reset</button>
+                    </div>
+                </div>
+                
+                <!-- Right: Result -->
+                <div class="panel result-panel fade-in-right">
+                    <h3>Result</h3>
+                    <div id="result-container" class="result-display">
+                        <div id="loading-state" class="hidden">
+                            <div class="spinner"></div>
+                            <p>Processing image...</p>
+                        </div>
+                        <div id="placeholder-text">
+                            <i class="fa-regular fa-image"></i>
+                            <p>Result will appear here</p>
+                        </div>
+                        <img id="result-final" src="" alt="Processed result" class="hidden">
+                    </div>
+                    <button id="download-btn" class="btn btn-secondary btn-block" disabled>
+                        <i class="fa-solid fa-download"></i> Download Image
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works">
+        <div class="container">
+            <div class="section-header fade-in-up">
+                <h2>How to Use Remove Mustache Tool?</h2>
+            </div>
+            <div class="steps-grid">
+                <div class="step-card card-hover fade-in-up">
+                    <div class="step-icon">
+                        <i class="fa-solid fa-upload"></i>
+                    </div>
+                    <h3>Upload Image</h3>
+                    <p>Upload Your photo that you want to remove the mustache. For best results, use a high-quality image with a well-lit face and a clear view of the mustache area.</p>
+                </div>
+                <div class="step-card card-hover fade-in-up" style="transition-delay: 0.1s;">
+                    <div class="step-icon">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    </div>
+                    <h3>Remove Mustache</h3>
+                    <p>Click the “Remove Mustache” button. The AI will detect the mustache and match the area with the surrounding skin.</p>
+                </div>
+                <div class="step-card card-hover fade-in-up" style="transition-delay: 0.2s;">
+                    <div class="step-icon">
+                        <i class="fa-solid fa-download"></i>
+                    </div>
+                    <h3>Download & Share</h3>
+                    <p>Once your mustache-free photo is ready, you can download it to your device and share it with friends.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us / Features -->
+    <section id="features">
+        <div class="container">
+            <div class="section-header fade-in-up">
+                <h2>Why Choose Us</h2>
+                <p>The Remove Mustache Tool is built to help users clean up facial hair in photos with accuracy and ease. It focuses on delivering reliable results while keeping the editing process simple and accessible.</p>
+            </div>
+            <div class="grid-2 features-grid">
+                <div class="feature-card card-glow fade-in-left">
+                    <div class="feature-header">
+                        <i class="fa-regular fa-circle-check"></i>
+                        <h3>Easy to Use</h3>
+                    </div>
+                    <p>The tool is designed with simplicity in mind. Just upload your photo and let the system handle the editing process without any manual effort. Anyone can use it without prior photo editing experience.</p>
+                </div>
+                <div class="feature-card card-glow fade-in-right">
+                    <div class="feature-header">
+                        <i class="fa-solid fa-bolt"></i>
+                        <h3>Fast Results</h3>
+                    </div>
+                    <p>Images are processed quickly, even when facial details are complex. You can get your final result in a short time without unnecessary waiting. This makes it suitable for quick edits.</p>
+                </div>
+                <div class="feature-card card-glow fade-in-left">
+                    <div class="feature-header">
+                        <i class="fa-solid fa-face-smile"></i>
+                        <h3>Natural Looking Output</h3>
+                    </div>
+                    <p>The tool removes only the mustache area while keeping skin texture and facial features intact. The final image looks clean and realistic. There is no harsh smoothing or visible editing marks.</p>
+                </div>
+                <div class="feature-card card-glow fade-in-right">
+                    <div class="feature-header">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <h3>Safe and Private</h3>
+                    </div>
+                    <p>Your photos are handled securely during the editing process. Images are not shared or reused for other purposes. This ensures your privacy is respected at all times.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery">
+        <div class="container">
+            <div class="section-header fade-in-up">
+                <h2>Example Results</h2>
+                <p>See the quality of our AI mustache removal on various portraits.</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item fade-in-up">
+                    <img src="images/gallery-result-1.jpg" alt="Clean shaven professional headshot result">
+                    <div class="gallery-overlay">
+                        <span>Clean Shaven</span>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in-up" style="transition-delay: 0.1s;">
+                    <img src="images/gallery-result-2.jpg" alt="Smiling man outdoors without mustache">
+                    <div class="gallery-overlay">
+                        <span>Natural Texture</span>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in-up" style="transition-delay: 0.2s;">
+                    <img src="images/gallery-result-3.jpg" alt="Side profile portrait processed">
+                    <div class="gallery-overlay">
+                        <span>Smooth Finish</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+        <div class="container">
+            <div class="section-header fade-in-up">
+                <h2>What People Say about us</h2>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card card-hover fade-in-up">
+                    <div class="stars">★★★★★</div>
+                    <p class="quote">"I tried the remove mustache tool out of curiosity, and it worked better than I expected. The result looked clean without making the face look edited or fake."</p>
+                    <div class="author">
+                        <strong>Lucas</strong>
+                        <span>Content Creator</span>
+                    </div>
+                </div>
+                <div class="testimonial-card card-hover fade-in-up" style="transition-delay: 0.1s;">
+                    <div class="stars">★★★★★</div>
+                    <p class="quote">"Removing facial hair often affects skin texture, but this tool handled it very well. The final image looked natural and smooth."</p>
+                    <div class="author">
+                        <strong>Ava</strong>
+                        <span>Android user from UK</span>
+                    </div>
+                </div>
+                <div class="testimonial-card card-hover fade-in-up" style="transition-delay: 0.2s;">
+                    <div class="stars">★★★★★</div>
+                    <p class="quote">"The remove mustache effect is quick and simple to use. I like that it focuses only on the mustache area and keeps the rest of the image natural."</p>
+                    <div class="author">
+                        <strong>Ethan</strong>
+                        <span>Graphic Designer</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq">
+        <div class="container">
+            <div class="section-header fade-in-up">
+                <h2>FAQs About Remove Mustache Tool</h2>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item fade-in-up">
+                    <button class="faq-question">
+                        What is the Remove Mustache tool?
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>The Remove Mustache tool is an AI-powered image editing tool that removes unwanted mustache hair from photos. Users upload an image, and the tool automatically applies a clean-shave effect while preserving natural facial details.</p>
+                    </div>
+                </div>
+                <div class="faq-item fade-in-up">
+                    <button class="faq-question">
+                        How much time does the Remove Mustache tool take?
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>The time required depends on the complexity of the image. However, the tool is optimized to deliver faster results compared to similar tools.</p>
+                    </div>
+                </div>
+                <div class="faq-item fade-in-up">
+                    <button class="faq-question">
+                        Is the Remove Mustache tool free to use?
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes. The Remove Mustache tool is completely free to use and does not require sign-up or account creation.</p>
+                    </div>
+                </div>
+                <div class="faq-item fade-in-up">
+                    <button class="faq-question">
+                        Is my photo safe when using this tool?
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes. Your images are processed securely and are not shared. Photo privacy and data protection are strictly maintained.</p>
+                    </div>
+                </div>
+                <div class="faq-item fade-in-up">
+                    <button class="faq-question">
+                        What kind of photos work best with this tool?
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Photos with clear facial visibility and good lighting produce the most accurate mustache removal results.</p>
+                    </div>
+                </div>
+                <div class="faq-item fade-in-up">
+                    <button class="faq-question">
+                        Does the tool affect skin texture or image quality?
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>No. The AI refines only the mustache area and maintains natural skin texture and overall image quality.</p>
+                    </div>
+                </div>
+                <div class="faq-item fade-in-up">
+                    <button class="faq-question">
+                        Do I need editing experience to use the tool?
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>No. The tool is fully automated and does not require any photo editing skills.</p>
+                    </div>
+                </div>
+                <div class="faq-item fade-in-up">
+                    <button class="faq-question">
+                        Which image formats are supported?
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>The tool supports common image formats such as JPG and PNG.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                        <span>Removemustache</span>
+                    </a>
+                    <p>Professional AI-powered facial hair removal tool. Clean, precise, and secure.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#playground">Try Tool</a></li>
+                        <li><a href="#how-it-works">How it Works</a></li>
+                        <li><a href="#gallery">Examples</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#faq">FAQs</a></li>
+                        <li><a href="#" data-modal-target="privacy-modal">Privacy Policy</a></li>
+                        <li><a href="#" data-modal-target="terms-modal">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Removemustache. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
